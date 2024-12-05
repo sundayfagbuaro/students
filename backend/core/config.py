@@ -12,13 +12,13 @@ class Settings:
     PROJECT_TITLE: str = "Student Portal"
     PROJECT_VERSION: str = "1.0.0"
 
-    POSTGRES_USER: str = os.getenv("POSTGRES_USER")
-    POSTGRES_PASSWORD: str = os.getenv("POSTGRES_PASSWORD")
-    POSTGRES_SERVER: str = os.getenv("POSTGRES_SERVER", "localhost")
-    POSTGRES_PORT: int = os.getenv("POSTGRES_PORT", 5432)
-    POSTGRES_DB: str = os.getenv("POSTGRES_DB")
-    DATABASE_URL: str = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}:{POSTGRES_PORT}/{POSTGRES_DB}"
 
+    MYSQL_USER: str = os.getenv("MYSQL_USER")
+    MYSQL_USER_PASSWORD: str = os.getenv("MYSQL_USER_PASSWORD")
+    MYSQL_HOST: str = os.getenv("MYSQL_HOST", "localhost")
+    MYSQL_PORT: int = os.getenv("MYSQL_PORT", 3306)
+    MYSQL_DATABASE: str = os.getenv("MYSQL_DATABASE")
+    DATABASE_URL: str =f"mysql+pymysql://{MYSQL_USER}:{MYSQL_USER_PASSWORD}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DATABASE}"
 
 
 settings = Settings()
