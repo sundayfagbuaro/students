@@ -5,7 +5,7 @@ from db.base_class import Base
 
 
 class Course(Base):
-    __tablename = 'course'
+    __tablename = "course"
     id = Column(Integer, primary_key=True, index=True)
     course_code = Column(String, nullable=False)
     course_title = Column(String, nullable=False)

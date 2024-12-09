@@ -1,5 +1,6 @@
 from logging.config import fileConfig
 
+from pymysql.constants.ER import DB_DROP_EXISTS
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
