@@ -1,8 +1,8 @@
-"""first commit
+"""create student and course tables tables
 
-Revision ID: 4c89577db634
-Revises: 
-Create Date: 2024-12-08 22:24:06.692278
+Revision ID: 8bffa25969f6
+Revises: 3a15c2cf1ad2
+Create Date: 2024-12-09 13:10:09.012718
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '4c89577db634'
-down_revision = None
+revision = '8bffa25969f6'
+down_revision = '3a15c2cf1ad2'
 branch_labels = None
 depends_on = None
 
