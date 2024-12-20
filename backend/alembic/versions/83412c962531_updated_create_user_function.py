@@ -1,8 +1,8 @@
-"""added full_name and student column
+"""updated create_user_function
 
-Revision ID: fa494a4e7ef4
-Revises: d293eb525ad2
-Create Date: 2024-12-19 16:54:58.347083
+Revision ID: 83412c962531
+Revises: d432a7bdba9f
+Create Date: 2024-12-20 12:19:02.380985
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'fa494a4e7ef4'
-down_revision = 'd293eb525ad2'
+revision = '83412c962531'
+down_revision = 'd432a7bdba9f'
 branch_labels = None
 depends_on = None
 

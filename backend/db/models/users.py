@@ -8,8 +8,8 @@ from sqlalchemy.orm import relationship
 class Users(Base):
     __tablename__ = 'users'
     id = Column(Integer,primary_key=True,index=True)
-    full_name = Column(String)
-#    last_name = Column(String,nullable=False)
+    first_name = Column(String)
+    last_name = Column(String)
     email = Column(String, unique=True,nullable=False,index=True)
     password = Column(String,nullable=False)
     is_active = Column(Boolean, default=True)

@@ -5,13 +5,11 @@ from db.models.users import Users
 
 def create_new_users(users: UserCreate, db: Session):
     users = Users(
-    #    fname = students.first_name,
-    #    lname = students.last_name,
+        first_name = users.first_name,
+        last_name = users.last_name,
         email = users.email,
         password = Hasher.get_password_hash(users.password),
-    #    student_level = students.student_level,
-    #    phone = students.phone,
-    #    address = students.address
+        student_level = users.student_level
     )
     db.add(users)
     db.commit()
